@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>commands</title>
+    <title>medcins</title>
 </head>
 <body>
     <div align="center">
-        <h1>commands list</h1>
+        <h1>medcins list</h1>
         <table border="1">
             <thead>
                 <tr>
-                    <th>command</th>
+                    <th>medcin</th>
                     <th>quantity</th>
                     <th>price</th>
                     <th>actions</th>
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="command:${listCommands}">
-                    <td th:text="${command.produit}"/>
-                    <td th:text="${command.quantity}"/>
-                    <td th:text="${command.price}"/>
+                <tr th:each="medcin:${listMedcins}">
+                    <td th:text="${medcin.produit}"/>
+                    <td th:text="${medcin.quantity}"/>
+                    <td th:text="${medcin.price}"/>
                     <td>
-                        <a th:href="@{/updateCommandForm/{id}(id=${command.id})}">edit</a>
-                        <a th:href="@{/deleteCommand/{id}(id=${command.id})}">delete</a>
+                        <a th:href="@{/updateMedcinForm/{id}(id=${medcin.id})}">edit</a>
+                        <a th:href="@{/deleteMedcin/{id}(id=${medcin.id})}">delete</a>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <a th:href="@{/addCommandForm}">add Command</a>
+        <a th:href="@{/addMedcinForm}">add Medcin</a>
     </div>
 </body>
 </html>

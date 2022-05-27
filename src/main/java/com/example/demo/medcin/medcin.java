@@ -1,4 +1,4 @@
-package com.example.demo.command;
+package com.example.demo.medcin;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,31 +9,31 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class comm {
+public class medcin {
     @Id
     @SequenceGenerator(
-        name = "command_seq", 
-        sequenceName = "command_seq",
+        name = "medcin_seq", 
+        sequenceName = "medcin_seq",
         allocationSize = 1) 
     @GeneratedValue(
         strategy = GenerationType.SEQUENCE,
-        generator = "command_seq")
+        generator = "medcin_seq")
     private long id;
     private String produit;
     private int quantity;
     private float price;
 
-    public comm() {
+    public medcin() {
     }
     
-    public comm(long id, String produit, int quantity, float price) {
+    public medcin(long id, String produit, int quantity, float price) {
         this.id = id;
         this.produit = produit;
         this.quantity = quantity;
         this.price = price;
     }
 
-    public comm(String produit, int quantity, float price) {
+    public medcin(String produit, int quantity, float price) {
         this.produit = produit;
         this.quantity = quantity;
         this.price = price;
@@ -73,7 +73,7 @@ public class comm {
     
     @Override
     public String toString() {
-        return "command{" +
+        return "medcin{" +
          "id=" + id +
           ", produit=" + produit +
           ", quantity="+ quantity +

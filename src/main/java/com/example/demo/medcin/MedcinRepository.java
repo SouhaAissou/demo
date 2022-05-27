@@ -1,4 +1,4 @@
-package com.example.demo.command;
+package com.example.demo.medcin;
 
 
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CommandRepository extends JpaRepository<comm, Long> {
+public interface MedcinRepository extends JpaRepository<medcin, Long> {
 
 }
 
