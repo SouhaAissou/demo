@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commands</title>
+</head>
+<body>
+    <div align="center">
+        <h1>commands list</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>medcin</th>
+                    <th>quantity</th>
+                    <th>actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="command:${listCommands}">
+                    <td th:text="${command.medcin.produit}"/>
+                    <td th:text="${command.quantity}"/>
+                    <td>
+                        <a th:href="@{/updateCommandForm/{id}(id=${command.id})}">edit</a>
+                        <a th:href="@{/deleteCommand/{id}(id=${command.id})}">delete</a> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a th:href="@{/addCommandForm}">add Command</a>
+    </div>
+</body>
+</html>

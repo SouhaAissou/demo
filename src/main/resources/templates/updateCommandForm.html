@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add Medcin</title>
+</head>
+<body>
+    <div align="center">
+        <h1>add Command</h1>
+        <hr>
+        <form action ="#" th:action="@{/saveCommand}" th:object="${command}" method="POST">
+
+            <!-- add hidden form field to handle update -->
+            <input type="hidden" th:field="*{id}">
+            <!-- <select th:field="*{category}">
+                <option th:each="category: ${productCategories}" th:value="${category}" th:text="${category.name}" />
+              </select> -->
+            <select th:field="*{medcin}">
+                <option value="0">select medcin</option><
+                <option th:each="medcin: ${listMedcins}" th:value="${medcin.id}" th:text="${medcin.produit}" />
+            </select>
+            
+            <!-- <input type="text" th:field="*{medcin}" placeholder="medcin"> -->
+
+            <input type="text" th:field="*{quantity}" >
+
+            <button type="submit">save</button>
+        </form>
+    </div>
+</body>
+</html>
