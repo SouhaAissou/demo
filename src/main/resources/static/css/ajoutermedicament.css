@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /*border are include in height and weight*/
+}
+
+body{
+    background: #eee   ;
+    background: linear-gradient(0deg, rgba(238, 237, 222, 1)
+    19%, #28892d) ;
+    overflow: hidden;
+    min-height: 100vh; /*Relative to 1% of the height of the viewport*/
+}
+
+.containerrr{
+    opacity: 1;
+    position: relative;
+    width: 40%;
+    left: 23rem;
+    top: 6rem;
+    height: 20rem;
+    background:rgba(255, 255, 255, 0.027);
+    box-shadow:  0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); 
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.20 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 50%;
+    height: 1rem;
+    border: 2px solid #28892d;
+    border-radius: 1rem;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: larger;
+    color: #28892d;
+    outline: none;
+    padding: 1.25rem;
+    background: transparent;
+    margin: 1rem;
+   
+}
+
+input:hover {
+    border-color: #ed524e;
+  }
+
+input:focus {
+    border-color: #ed524e ;
+}   
+
+.form__button{
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background-image: linear-gradient(to right,  #28892d , rgba(238, 237, 222, 1), #ed524e);
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+	display: block;
+    cursor: pointer;
+	transition: .5s;
+    background-size: 200%;
+    position: relative;
+    top: 1rem;
+}
+
+.form__button:hover{
+    background-color: #E0DDAA;
+    background-position:  right;
+}
+
+label{
+    position: relative;
+    left: 1rem;
+    color: #ed524e;
+    font-weight: bold;
+}
+
+.button__{
+    position: relative;
+    width: 40%;
+    margin-top: 20px;
+    padding: 0.75rem 2rem;
+    background-image: linear-gradient(to right,  #ed524e , rgba(238, 237, 222, 1), #28892d);
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+	display: block;
+    cursor: pointer;
+	transition: .5s;
+    background-size: 200%;
+    position: relative;
+    margin-top: 7rem;
+
+
+}
+.button__:hover{
+    background-color: #E0DDAA;
+    background-position:  right;
+}

@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>update Medcin</title>
+    <link rel="stylesheet" th:href="@{/css/ajoutermedicament.css}">
 </head>
 <body>
     <div align="center">
         <h1>update medcin</h1>
-        <hr>
         <form action ="#" th:action="@{/saveMedcin}" th:object="${medcin}" method="POST">
 
             <!-- add hidden form field to handle update -->
@@ -21,7 +21,7 @@
 
             <input type="text" th:field="*{price}">
 
-            <button type="submit">update</button>
+            <button class="button__" type="submit">update</button>
         </form>
     </div>
 </body>

@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>medcins</title>
+    <link rel="stylesheet" th:href="@{/css/Interfacecommande.css}">
 </head>
 <body>
     <div align="center">
-        <h1>medcins list</h1>
-        <table border="1">
+        <h1>List Des Medicaments </h1>
+        <table border="2" >
             <thead>
                 <tr>
-                    <th>medcin</th>
-                    <th>quantity</th>
-                    <th>price</th>
+                    <th>medicament</th>
+                    <th>quantite</th>
+                    <th>prix</th>
                     <th>actions</th>
                 </tr>
             </thead>
@@ -24,13 +25,26 @@
                     <td th:text="${medcin.quantity}"/>
                     <td th:text="${medcin.price}"/>
                     <td>
-                        <a th:href="@{/updateMedcinForm/{id}(id=${medcin.id})}">edit</a>
-                        <a th:href="@{/deleteMedcin/{id}(id=${medcin.id})}">delete</a>
+                        <button class="button_">
+                            <a th:href="@{/updateMedcinForm/{id}(id=${medcin.id})}">
+                                edit
+                            </a>
+                        </button>
+                        <button class="button_">
+                            <a th:href="@{/deleteMedcin/{id}(id=${medcin.id})}">
+                                delete
+                            </a>
+                        </button>
+                        
                     </td>
                 </tr>
             </tbody>
         </table>
-        <a th:href="@{/addMedcinForm}">add Medcin</a>
+        <button class="button__">
+            <a th:href="@{/addMedcinForm}">
+                Ajouter une Medicament
+            </a>
+        <!-- <a th:href="@{/addMedcinForm}">add Medcin</a> -->
     </div>
 </body>
 </html>

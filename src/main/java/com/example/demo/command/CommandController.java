@@ -61,4 +61,8 @@ public class CommandController {
         return "redirect:/commands";
     }
 
+    @GetMapping("/")
+    public String Dashboard(){
+        return "Dashboard";
+    }
 }
