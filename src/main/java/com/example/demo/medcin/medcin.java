@@ -71,13 +71,5 @@ public class medcin {
         this.price = price;
     }
     
-    @Override
-    public String toString() {
-        return "medcin{" +
-         "id=" + id +
-          ", produit=" + produit +
-          ", quantity="+ quantity +
-          ", price=" + price +
-         '}';
-    }
+
 }

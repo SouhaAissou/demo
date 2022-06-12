@@ -6,8 +6,8 @@
 
 body{
     background: #eee   ;
-    background: linear-gradient(0deg, rgba(238, 237, 222, 1)
-    19%, #28892d) ;
+    background: linear-gradient(0deg, #F3E9DD
+    19%, #4B6587) ;
     overflow: hidden;
     min-height: 100vh; /*Relative to 1% of the height of the viewport*/
 }
@@ -17,7 +17,7 @@ body{
     left: 5rem;
 
     /* padding: 0.75rem 2rem; */
-    background-image: linear-gradient(to right, #ed524e, rgba(238, 237, 222, 1), #ed524e);
+    background-image: linear-gradient(to right,  #DAB88B , rgba(238, 237, 222, 1), #4B6587);
     position: relative;
     border-radius: 5rem;
     outline: none;
@@ -33,7 +33,7 @@ body{
 .button2{
     width: 40%;
     padding: 0.75rem 2rem;
-    background-image: linear-gradient(to right,  #ed524e , rgba(238, 237, 222, 1), #28892d);
+    background-image: linear-gradient(to right,  #DAB88B , rgba(238, 237, 222, 1), #4B6587);
     border-radius: 5rem;
     outline: none;
     border: none;
@@ -112,6 +112,10 @@ p{
     font-size: large;
 }
 
+h1{
+    color: #DAB88B;
+}
+
 .conf_form_group{
     width: 80%;
     position: relative;
@@ -131,11 +135,12 @@ table{
     width: 70%;
     border-collapse: collapse;
     border-spacing: 0;
-    border: 2px solid #ed524e;
+    border: 2px solid #DAB88B;
     border-radius: 5px;
-    background-color: #65b96d;
+    background: transparent;
     margin-bottom: 20px;
     margin-top: 3rem;
+    color: #DAB88B;
 
 }
 
@@ -143,7 +148,7 @@ table{
     position: relative;
     width: 40%;
     /* padding: 0.75rem 2rem; */
-    background-image: linear-gradient(to right,  #ed524e , rgba(238, 237, 222, 1), #28892d);
+    background-image: linear-gradient(to right,   #DAB88B , rgba(238, 237, 222, 1), #4B6587);
     border-radius: 5rem;
     outline: none;
     border: none;
@@ -167,7 +172,7 @@ table{
     width: 40%;
     margin-top: 20px;
     padding: 0.75rem 2rem;
-    background-image: linear-gradient(to right,  #ed524e , rgba(238, 237, 222, 1), #28892d);
+    background-image: linear-gradient(to right,  #DAB88B , rgba(238, 237, 222, 1), #4B6587);
     border-radius: 5rem;
     outline: none;
     border: none;

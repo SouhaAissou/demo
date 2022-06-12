@@ -76,12 +76,7 @@ public class command {
     }
 
 
-    @Override
-    public String toString() {
-        return "command [id=" + id + ", medcin=" + medcin + ", quantity=" + quantity + "]";
-    }
-    
-    
+   
 
     
 }

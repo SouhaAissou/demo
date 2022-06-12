@@ -5,9 +5,8 @@
 }
 
 body{
-    background: #eee   ;
-    background: linear-gradient(0deg, rgba(238, 237, 222, 1)
-    19%, #28892d) ;
+
+    background: #4B6587;
     overflow: hidden;
     min-height: 100vh; /*Relative to 1% of the height of the viewport*/
 }
@@ -17,10 +16,10 @@ body{
     position: relative;
     width: 40%;
     left: 23rem;
-    top: 6rem;
-    height: 20rem;
+    top: 13rem;
+    height: 10rem;
     background:rgba(255, 255, 255, 0.027);
-    box-shadow:  0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); 
+    box-shadow:  0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(3px);
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.20 );
@@ -30,33 +29,33 @@ body{
 }
 
 input{
-    width: 50%;
+    width: 70%;
     height: 1rem;
-    border: 2px solid #28892d;
+    border: 2px solid #DAB88B;
     border-radius: 1rem;
     font-family: inherit;
     font-weight: inherit;
     font-size: larger;
-    color: #28892d;
+    color: #DAB88B;
     outline: none;
     padding: 1.25rem;
     background: transparent;
     margin: 1rem;
-   
+
 }
 
 input:hover {
-    border-color: #ed524e;
+    border-color: #F3E9DD;
   }
 
 input:focus {
-    border-color: #ed524e ;
-}   
+    border-color: #DAB88B;
+}
 
 .form__button{
     width: 100%;
     padding: 0.75rem 2rem;
-    background-image: linear-gradient(to right,  #28892d , rgba(238, 237, 222, 1), #ed524e);
+    background-image: linear-gradient(to right,  #DAB88B , rgba(238, 237, 222, 1), #F3E9DD);
     border-radius: 5rem;
     outline: none;
     border: none;
@@ -70,15 +69,55 @@ input:focus {
 }
 
 .form__button:hover{
-    background-color: #E0DDAA;
+    background-color: #F3E9DD;
     background-position:  right;
 }
 
-label{
-    position: relative;
-    left: 1rem;
-    color: #ed524e;
-    font-weight: bold;
+option {
+    width: 70%;
+    height: 1rem;
+    border: 2px solid #28892d;
+    border-radius: 1rem;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: larger;
+    color: #28892d;
+    outline: none;
+    padding: 1.25rem;
+    /* background: transparent; */
+
+}
+
+h1{
+    color: #DAB88B;
+}
+
+select{
+    width: 70%;
+    height: 1rem;
+    border: 2px solid #DAB88B;
+    border-radius: 1rem;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: larger;
+    color: #28892d;
+    outline: none;
+    padding: 1.25rem;
+  /* background: transparent; */
+    background: transparent;
+}
+
+select:hover {
+    border-color: #F3E9DD;
+  }
+
+select:focus {
+    border-color: #DAB88B ;
+}
+
+h1{
+    margin:50px;
+    padding: 10px;
 }
 
 .button__{
@@ -86,7 +125,7 @@ label{
     width: 40%;
     margin-top: 20px;
     padding: 0.75rem 2rem;
-    background-image: linear-gradient(to right,  #ed524e , rgba(238, 237, 222, 1), #28892d);
+    background-image: linear-gradient(to right,  #DAB88B , rgba(238, 237, 222, 1), #4B6587);
     border-radius: 5rem;
     outline: none;
     border: none;
